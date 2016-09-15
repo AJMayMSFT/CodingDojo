@@ -1,0 +1,100 @@
+/*CSS reset settings here*/
+*{
+ margin: 0px;
+ padding: 0px;
+ /*font: 12px arial, sans-serif;*/
+ font-family: 'helvetica neue', arial, verdana, sans-serif;
+}
+h1{color: maroon; line-height: 200% }
+h2{color: maroon; line-height: 200% }
+h3{color: maroon; line-height: 200% }
+a{color: maroon;}
+p{color: dimgray;}
+#wrapper{
+ width: 1000px;
+ margin: 0px auto;
+ /*border: 1px solid lightgray;*/
+
+}
+#header{
+ /*height: 150px;*/
+ background-color: maroon;
+
+}
+.headersection{
+  display: inline-block;
+  height: 75px;
+  vertical-align: top;
+
+}
+.headersection p{color: white;}
+.headersection a{color: orange;}
+#tagline{
+  font-size: 20px;
+}
+#headerlinks{
+  float: right;
+  margin-right: 50px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+#headermenu{
+  margin: 0px;
+  padding: 10px 30px;
+  list-style-type: none;
+  font-size: 14px;
+  background-color: lightgray;
+  border-bottom: 1px solid gray;
+
+}
+#headermenu a{
+  text-decoration:none;
+  font-weight: bold;
+  color: dimgray;
+  font-size: 12px;
+  padding-right: 10px;
+}
+#headermenu li{
+  display: inline;
+  margin: auto 5px;
+
+  border-right: 1px solid gray;
+}
+#navigation{
+  margin: 20px;
+  padding: 5px;
+  display: inline-block;
+ height: 250px;
+ width: 120px;
+ background-color: lightgray;
+ border: 1px solid darkgray;
+ color: maroon;
+}
+#navigation a{
+  color: inherit;
+}
+#navigation ul{
+  list-style-type: &#163; 
+}
+#main_content{
+  padding: 10px;
+  display: inline-block;
+  vertical-align: top;
+  width: 735px;
+  /*border: 1px solid lightgray;*/
+}
+/*#main_content ul li{
+  text-indent:20px;
+}*/
+#main_content ul {
+  margin:30px;
+}
+#main_content ol {
+  margin:30px;
+}
+.subcontents{
+  padding: 10px;
+}
+.date{
+  font-weight: bold;
+}
