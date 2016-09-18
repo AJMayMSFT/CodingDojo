@@ -1,0 +1,88 @@
+*{
+ font-family: 'helvetica neue', arial, verdana, sans-serif;
+}
+#container{
+  width: 1025px;
+
+}
+.header{}
+  .header ul li{
+    display: inline-block;
+    padding: 0px 10px;
+    border-left: 1px solid gray;
+    font-size: 10px;
+    color: gray;
+    font-weight: bold;
+
+
+  }
+#logo_section{
+    display: inline-block;
+    width: 1025px;
+    height: 75px;
+    border-bottom: 1px solid gray;
+}
+#logo_section img{
+    display: inline-block;
+
+}
+#logo_section h3{
+    display: inline-block;
+    margin-left: 300px;
+}
+.main{
+  padding: 15px 30px;
+  background-color: black;
+}
+.main h4{
+  background-color: yellow;
+  padding: 10px;
+  margin-top: 0px;
+  text-transform: uppercase;
+}
+.main_pic{
+  display: inline-block;
+  vertical-align: top;
+  width: 400px;}
+  .main_pic img {border: 3px solid white;}
+.top_content{
+  display: inline-block;
+}
+#about_PCC{
+  display: inline-block;
+  width: 550px;
+  height: 260px;
+  vertical-align: top;
+  background-color: dimgray;
+  padding: 0px;
+}
+  #about_PCC p{
+    color: white;
+    font-size: 13px;
+    padding: 0px 15px;
+  }
+.section{
+  display: inline-block;
+  width: 222px;
+  height: 300px;
+  padding: 0px;
+  margin: 7px;
+  background-color: white;
+  vertical-align: top;
+}
+  .section p{
+    font-size: 12px;
+    padding: 0px 10px;
+  }
+  .section h4{
+    margin: 0px;
+    text-transform: uppercase;
+  }
+  .section img{
+    padding: 0px;
+  }
+
+.bulk p{
+  color: yellow;
+  font-size: 12px;
+}
