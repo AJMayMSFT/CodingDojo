@@ -4,11 +4,20 @@
  padding: 0px;
  font-family: 'helvetica neue', arial, verdana, sans-serif;
 }
+p, li{
+  font-size: 12px;
+  line-height: 1.5;
+}
+h1, h2, h3, h4{
+  color: dodgerblue;
+}
+h4{
+  margin-top: 10px;
+}
 .container{
   width: 1000px;
   margin: 10px;
   padding: 10px;
-  border: 1px solid red;
 }
 .header_menu ul {
   border-left: 1px solid dimgray;
@@ -60,7 +69,7 @@
 
 }
 #word{color: dimgray;}
-#stream{color: dodgerblue;}
+.stream{color: dodgerblue;}
 .logo_tagline{
   padding: 10px;
   background-color:dodgerblue;
@@ -70,7 +79,7 @@
 
 .sidebar{
   padding: 10px;
-  margin: 10px 0px;
+  margin: 75px 0px 0px 0px;
   display: inline-block;
   width: 225px;
   border: 1px solid blue;
@@ -78,31 +87,79 @@
 .main_content{
   display: inline-block;
   width: 700px;
-  border: 1px solid blue;
   vertical-align: top;
   margin: 20px;
 }
-.main_home img{
+.main_home{
   display: inline-block;
-  width: 41px;
+  width: 100px;
 }
 .main_home p{
   display: inline-block;
   width: 20px;
   vertical-align: top;
+  font-size: 14px;
 }
 .main_call{
   display: inline-block;
   vertical-align: top;
   width:300px;
-  margin-left: 425px;
+  margin-left: 295px;
 }
-.main_call img{
-  display: inline-block;
-  width: 22px;
+  .main_call img{
+    display: inline-block;
+    width: 22px;
+    vertical-align: top;
+  }
+  .main_call_text{
+    display: inline-block;
+    width: 250px;
+    color: dimgray;
+  }
+  .main_call_text p{
+    line-height: normal;
+  }
+.content {
+  border-top: 1px solid gray;
+}
+.content h3{
+  padding: 10px 0px;
+}
+.content p{
+  padding: 10px 0px;
+}
+.content ul li{
+  padding-left: 10px;
+  list-style: square outside;
+}
+.phone_number{
+  font-size: 20px;
+  color: lightskyblue;
+}
+.content_ad{
+  border: 5px solid deepskyblue;
+  /*height: 60px;*/
+  /*margin: 10px, 0px;*/
+}
+.content_ad img{
   vertical-align: top;
-}
-.main_call_text{
   display: inline-block;
-  width: 250px;
+  width: 80px;
+}
+.content_ad_text{
+  display: inline-block;
+  width: 580px;
+  padding: 0px 5px;
+}
+.content_ad p{
+  font-size: 14px;
+}
+#clickme{
+  display: inline-block;
+  width: 130px;
+  padding: 5px 10px;
+  background-color: yellowgreen;
+  color: white;
+  margin-bottom: 3px;
+  border: 1px solid olivedrab;
 }
