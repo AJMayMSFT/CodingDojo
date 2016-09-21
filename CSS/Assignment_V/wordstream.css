@@ -54,39 +54,35 @@ h4{
   display: inline-block;
   height: 60px;
 }
-.logo_section img{
-  width: 67px;
-  display: inline-block;
-}
-.logo_section h1{
-  width: 100px;
-  display: inline-block;
-  /*margin-left:10px;*/
-  padding: 10px;
-  vertical-align: top;
-}
-.logo_section h2{
+  .logo_section img{
+    width: 67px;
+    display: inline-block;
+  }
+  .logo_section h1{
+    width: 100px;
+    display: inline-block;
+    /*margin-left:10px;*/
+    padding: 10px;
+    vertical-align: top;
+  }
 
-}
+  .logo_tagline{
+    padding: 10px;
+    background-color:dodgerblue;
+    color: white;
+    width: 990px;
+  }
 #word{color: dimgray;}
 .stream{color: dodgerblue;}
-.logo_tagline{
-  padding: 10px;
-  background-color:dodgerblue;
-  color: white;
-  width: 990px;
-}
-
 .sidebar{
   padding: 10px;
-  margin: 75px 0px 0px 0px;
+  margin: 35px 0px 0px 0px;
   display: inline-block;
-  width: 225px;
-  border: 1px solid blue;
+  width: 240px;
 }
 .main_content{
   display: inline-block;
-  width: 700px;
+  width: 690px;
   vertical-align: top;
   margin: 20px;
 }
@@ -103,7 +99,7 @@ h4{
 .main_call{
   display: inline-block;
   vertical-align: top;
-  width:300px;
+  width:225px;
   margin-left: 295px;
 }
   .main_call img{
@@ -113,7 +109,7 @@ h4{
   }
   .main_call_text{
     display: inline-block;
-    width: 250px;
+    width: 175px;
     color: dimgray;
   }
   .main_call_text p{
@@ -163,3 +159,30 @@ h4{
   margin-bottom: 3px;
   border: 1px solid olivedrab;
 }
+.ad{
+  padding: 10px;
+  margin: 15px;
+  border-bottom: 1px solid gray;
+}
+.ad h4 {
+  margin-top: 0px;
+}
+#image_ad{
+  background-image: url("./images/left_content_ad.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-color: white;
+  height: 240px;
+  width: 198px;
+}
+#ad_red{color: red;}
+.ad_button{
+  padding: 10px;
+  text-transform: uppercase;
+  color: white;
+  margin: 10px, 0px;
+
+  text-align: center;
+}
+#schedule{background-color: dodgerblue;}
+#trial{background-color: orange;}
