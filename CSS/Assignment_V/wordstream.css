@@ -69,9 +69,9 @@ h4{
   .logo_tagline{
     padding: 10px;
     background-color:dodgerblue;
-    color: white;
     width: 990px;
   }
+  .logo_tagline h2{ color: white;}
 #word{color: dimgray;}
 .stream{color: dodgerblue;}
 .sidebar{
@@ -160,7 +160,6 @@ h4{
   border: 1px solid olivedrab;
 }
 .ad{
-  padding: 10px;
   margin: 15px;
   border-bottom: 1px solid gray;
 }
@@ -175,14 +174,27 @@ h4{
   height: 240px;
   width: 198px;
 }
+#image_ad p, h4{
+  padding: 10px;
+}
 #ad_red{color: red;}
 .ad_button{
   padding: 10px;
   text-transform: uppercase;
   color: white;
   margin: 10px, 0px;
-
   text-align: center;
 }
 #schedule{background-color: dodgerblue;}
 #trial{background-color: orange;}
+#trial_button{
+  display: inline-block;
+  width: 140px;
+  padding: 5px 10px;
+  background-color: dodgerblue;
+  color: white;
+  margin-bottom: 3px;
+  border: 1px solid blue;
+  margin-left: 20px;
+}
+.round {border-radius: 6px;}
