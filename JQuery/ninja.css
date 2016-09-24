@@ -1,0 +1,21 @@
+h1{
+  color: darkseagreen;
+  font-family: 'helvetica neue', arial, verdana, sans-serif;
+  margin: 20px;
+}
+.row{
+  display: inline-block;
+  padding: 0px 10px;
+  margin: 0px 0px 0px 10px;
+}
+.row img{
+  width: 10%;
+  margin: 10px 0px 10px 5px;
+}
+button{
+  margin-left: 20px;
+  background-color: darkseagreen;
+  color:white;
+  border: olivedrab;
+  padding: 5px 10px;
+}
