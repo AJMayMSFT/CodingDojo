@@ -1,0 +1,46 @@
+*{
+  color: dimgray;
+  font-family: 'helvetica neue', arial, verdana, sans-serif;
+}
+h1, h2, h3, h4, p {
+  margin: 10px;
+
+}
+button{
+  display: inline-block;
+  margin-left: 20px;
+  background-color: darkseagreen;
+  color:white;
+  border: olivedrab;
+  padding: 5px 10px;
+  width: 85px;
+}
+.caption{
+  display: inline-block;
+  width: 40%;
+  color:black;
+  margin-left: 10px;
+}
+.section{border-bottom: 1px solid gray;}
+.red{
+  color: dodgerblue;
+  font-size:14px;
+  font-weight: bolder;
+}
+.spacer{margin-left: 120px;}
+#mole_two{background-color: dodgerblue;
+vertical-align: bottom;}
+#mole_two, #mole_one {width: 150px;}
+#chloe{
+  display: inline-block;
+  width: 30%;
+}
+#chloe img{width: 100px;}
+#chloe p{
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;}
+.whack{
+  display: inline-block;
+  width: 40%;
+}

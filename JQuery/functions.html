@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>jQuery Functions</title>
+  <link rel="stylesheet" type="text/css" href="functions.css">
+  <meta name="description" content="This is a collection of elements that exercise various JQuery functions." >
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      // $('#addClass').click(function(){});
+      $('#mole_two').hide();
+      $('#chloe').hide();
+      $('#addClass').click(function(){
+        $('.addClass_section p').addClass('red');
+      });
+      $('#append').click(function(){
+        $('.append_section div').append("jumped over the lazy dog.");
+      });
+      $('#text').click(function(){
+        $('.text_section p').text("fear, itself.");
+      });
+      $('#mole_one').click(function(){
+        $('#mole_two').show();
+        $(this).hide();
+      });
+      $('#mole_two').click(function(){
+        $('#mole_one').show();
+        $(this).hide();
+      });
+      $('#toggle').click(function(){
+        $('#chloe').toggle('slow');
+      });
+      $('#before').click(function(){
+        $('.before_section p').before("<h4>It was a dark and stormy night...</h4>")
+      });
+      $('#after').click(function(){
+        $('.after_section p').after("<ul><li>Power cord</li><li>DVI cable</li><li>Lots and lots of coffee</li></ul>")
+      });
+    });
+  </script>
+
+
+</head>
+<body>
+  <h1>jQuery functions</h1>
+    <div class="section addClass_section">
+      <button type="button" name="addClass" id="addClass">Restyle</button>
+      <div class="caption">
+        <h3>.addClass()</h3>
+        <p>Restyle this class by adding a class to it in CSS.</p>
+      </div>
+    </div>
+    <div class="section append_section">
+      <button type="button" name="addClass" id="append">Finish</button>
+      <div class="caption">
+        <h3>.append()</h3>
+        <p>The quick brown fox...</p>
+      </div>
+    </div>
+    <div class="section text_section">
+      <button type="button" name="addClass" id="text">But?</button>
+      <div class="caption">
+        <h3>.text()</h3>
+        <p>We have nothing to fear...</p>
+      </div>
+    </div>
+    <div class="section show_section">
+      <div class="caption spacer">
+        <div class="whack">
+          <h3>.show() and .hide()</h3>
+          <p>Whack-a-mole</p>
+          <button type="button" name="addClass" id="mole_one">I'm a mole!</button>
+        </div>
+        <div class="whack">
+          <button type="button" name="addClass" id="mole_two">No, I'm a mole!</button>
+        </div>
+      </div>
+    </div>
+    <div class="section toggle_section">
+      <button type="button" name="addClass" id="toggle">So do it</button>
+      <div class="caption">
+        <h3>.toggle()</h3>
+        <p>Hey, I can toggle an image!</p>
+      </div>
+      <div id="chloe">
+        <img src="./images/chloe.png" alt="This actually is an image of my cat." />
+        <p>
+          Wow, I'm impressed.
+        </p>
+      </div>
+    </div>
+    <div class="section before_section">
+      <button type="button" name="addClass" id="before">Hunh?</button>
+      <div class="caption">
+        <h3>.before()</h3>
+        <p>Suddenly, a shot rang out.</p>
+      </div>
+    </div>
+    <div class="section after_section">
+      <button type="button" name="addClass" id="after">Tell me</button>
+      <div class="caption">
+        <h3>.after()</h3>
+        <p>Things to bring to class tomorrow:</p>
+      </div>
+    </div>
+</body>
+</html>
