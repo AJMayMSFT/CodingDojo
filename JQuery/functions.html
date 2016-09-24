@@ -6,39 +6,7 @@
   <link rel="stylesheet" type="text/css" href="functions.css">
   <meta name="description" content="This is a collection of elements that exercise various JQuery functions." >
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function(){
-      // $('#addClass').click(function(){});
-      $('#mole_two').hide();
-      $('#chloe').hide();
-      $('#addClass').click(function(){
-        $('.addClass_section p').addClass('red');
-      });
-      $('#append').click(function(){
-        $('.append_section div').append("jumped over the lazy dog.");
-      });
-      $('#text').click(function(){
-        $('.text_section p').text("fear, itself.");
-      });
-      $('#mole_one').click(function(){
-        $('#mole_two').show();
-        $(this).hide();
-      });
-      $('#mole_two').click(function(){
-        $('#mole_one').show();
-        $(this).hide();
-      });
-      $('#toggle').click(function(){
-        $('#chloe').toggle('slow');
-      });
-      $('#before').click(function(){
-        $('.before_section p').before("<h4>It was a dark and stormy night...</h4>")
-      });
-      $('#after').click(function(){
-        $('.after_section p').after("<ul><li>Power cord</li><li>DVI cable</li><li>Lots and lots of coffee</li></ul>")
-      });
-    });
-  </script>
+  <script type="text/javascript" src="jq_functions.js"></script>
 
 
 </head>
@@ -102,6 +70,23 @@
       <div class="caption">
         <h3>.after()</h3>
         <p>Things to bring to class tomorrow:</p>
+      </div>
+    </div>
+    <div class="section val_section">
+      <button type="button" name="addClass" id="val">Read input</button>
+      <div class="caption">
+        <h3>.val()</h3>
+        <p>Enter some text</p>
+        <input type="text" value="some text">
+        <p id="foo"></p>
+      </div>
+    </div>
+    <div class="section attr_section">
+      <button type="button" name="addClass" id="attr">Read ID</button>
+      <div class="caption">
+        <h3>.attr()</h3>
+        <p id="ID1234">What's my ID attribute?</p>
+        <p id="bar"></p>
       </div>
     </div>
 </body>
