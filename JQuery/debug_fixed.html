@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Debug Git</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<!--<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js" integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw=" crossorigin="anonymous"></script>-->
+	<script>
+		//fix these bugs!
+		//done
+		$(document).ready(function(){
+			for (var i=0; i <= 10; i++){
+				console.log("I've said hello " + i + " times!");
+			}
+			//done
+			$('body').on('click', '#btn', function(){
+					alert('jQuery is in action!');
+					$('#div1').append('<button id="bugs">Bugs found?</button>');
+				$('#bugs').click(function(){
+					alert('All bugs found!');
+				});
+		});
+	});
+		//[hacker level]
+		//make the initial button click create a new button and when this NEW button is clicked...
+		//have it alert the user "All bugs found"
+
+	</script>
+</head>
+<body>
+	<h1>Git Debug</h1>
+	<div id='div1'><button id="btn">Click</button></div>
+</body>
+</html>
