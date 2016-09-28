@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="addUser.css">
+  <meta name="description" content="This is the homepage for the Add User with jQuery exercise." >
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="addUser.js"></script>
+  <title>Add a User</title>
+</head>
+<body>
+  <table>
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Contact number</th>
+        </tr>
+    </thead>
+    <tbody id="table_users">
+    </tbody>
+</table>
+
+  <h2>Add User</h2>
+  <form action="" id="user_form">
+    <label>
+      First Name:<input type="text" id="fn" class="user_input" name="first_name">
+    </label>
+    <label>
+        Last Name:<input type="text" id="ln" class="user_input" name="last_name">
+    </label>
+    <label>
+        Email:<input type="text" id="em" class="user_input" name="email">
+    </label>
+    <label>
+        Contact:<input type="text" id="con" class="user_input" name="contact">
+    </label>
+    <input id="add_button" type="submit" value="Add user">
+  </form>
+</body>
+</html>

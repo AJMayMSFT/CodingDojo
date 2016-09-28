@@ -1,0 +1,38 @@
+*{
+    font-family: 'helvetica neue', arial, verdana, sans-serif;
+    margin-left: 10px;
+}
+h1, h2 {
+  color: darkseagreen;
+  margin: 20px;
+}
+h2{
+    width: 50%;
+    border-bottom: 1px solid dimgray;
+}
+thead{
+  border-bottom: 1px solid dimgray;
+}
+label{
+  display: block;
+  width: 100%;
+  margin-left: 20px;
+  padding: 5px 10px;
+}
+label input{
+  background-color: lightgrey;
+  border: darkgray;
+  padding: 5px 10px;
+}
+form{
+  display: inline-block;
+  width: 50%;
+}
+#add_button{
+  margin-left: 20px;
+  background-color: darkseagreen;
+  color:white;
+  border: olivedrab;
+  padding: 5px 10px;
+  width: 100px;
+}
