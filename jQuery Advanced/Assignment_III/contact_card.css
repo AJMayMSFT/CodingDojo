@@ -1,0 +1,49 @@
+*{
+    font-family: 'helvetica neue', arial, verdana, sans-serif;
+    margin-left: 10px;
+}
+h1, h2 {
+  color: cornflowerblue;
+  margin: 20px;
+}
+.pane{
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+  /*border: 1px solid blue;*/
+}
+label{
+  display: block;
+  width: 100%;
+  /*margin-left: 20px;*/
+  padding: 5px 10px;
+  margin: 5px;
+}
+label input{
+  background-color: azure;
+  border: 1px solid steelblue;
+  padding: 5px 10px;
+}
+form{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#add_button{
+  margin-left: 15px;
+  background-color: cornflowerblue;
+  color:white;
+  border: 1px solid steelblue;
+  padding: 5px 10px;
+  width: 100px;
+}
+#description{
+  display: block;
+  width: 250px;
+  height: 100px;
+  padding: 0px;
+  margin: 10px 0px;
+}
+.card{
+  background-color: lightblue;
+  padding: 5px 10px;
+}
