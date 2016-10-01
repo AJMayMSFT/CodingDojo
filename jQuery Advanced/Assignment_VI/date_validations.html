@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="This is the homepage for the Date Validations jQuery exercise." >
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/pepper-grinder/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="date_validations.js"></script>
+  <link rel="stylesheet" type="text/css" href="dv_main.css">
+
+  <title>jQueryUI date validations exercise</title>
+</head>
+<body>
+  <div id="confirmation" title="Trip Details">
+  </div>
+
+
+  <h1>Welcome to Plan-A-Cruise</h1>
+  <form action="" id="plan_cruise">
+    <label>
+      From:<input type="text" id="from" class="trip_date" name="from_date" placeholder="From">
+    </label>
+    <label>
+        To:<input type="text" id="to" class="trip_date" name="to_date" placeholder="To">
+    </label>
+    <label>
+        Name:<input type="text" id="name" class="user_input" name="name" placeholder="Name">
+    </label>
+    <input id="check_dates" type="submit" value="Check dates!">
+  </form>
+
+</body>
+</html>

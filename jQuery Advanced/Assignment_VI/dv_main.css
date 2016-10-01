@@ -1,0 +1,24 @@
+*{
+    font-family: 'helvetica neue', arial, verdana, sans-serif;
+    margin-left: 10px;
+    color: sienna;
+}
+label{
+  display: block;
+  width: 250px;
+  margin-left: 20px;
+  padding: 5px 10px;
+}
+label input{
+  background-color: linen;
+  border: khaki;
+  padding: 5px 10px;
+}
+#check_dates{
+  margin: 20px;
+  background-color: sienna;
+  color:white;
+  border: khaki;
+  padding: 5px 10px;
+  width: 100px;
+}
