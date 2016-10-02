@@ -5,7 +5,7 @@
 }
 label{
   display: block;
-  width: 250px;
+  width: 450px;
   margin-left: 20px;
   padding: 5px 10px;
 }
@@ -21,4 +21,9 @@ label input{
   border: khaki;
   padding: 5px 10px;
   width: 100px;
+}
+#name_alert{
+  color: maroon;
+  padding: 5px 10px;
+  background-color: pink;
 }
