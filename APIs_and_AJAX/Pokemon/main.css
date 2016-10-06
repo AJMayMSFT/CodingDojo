@@ -1,0 +1,15 @@
+*{
+    font-family: 'helvetica neue', arial, verdana, sans-serif;
+    margin-left: 10px;
+}
+#photos{
+    display: inline-block;
+    width: 75%;
+}
+.deck{
+  display: inline-block;
+  width: 20%;
+  height: 500px;
+  vertical-align: top;
+  border: 5px solid blue;
+}

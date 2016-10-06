@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    *{
+        font-family: 'helvetica neue', arial, verdana, sans-serif;
+        margin-left: 10px;
+    }
+    h1, h2 {
+      color: cornflowerblue;
+    }
+  </style>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Pokemon API Exercise</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+
+
+      // $.get('http://pokeapi.co/api/v1/pokemon/1/', function(data){
+      //   console.log(data);
+      //   var html_str = "<h2>Pokemon: " + data.name;
+      //   $('body').append(html_str);
+      //   $('body').append('<p> Attack is: ' + data.attack + '</p>');
+      //   $('body').append('<p> Happiness is: ' + data.happiness + '</p>');
+      // }, 'json');
+
+      // $.post('http://pokeapi.co/api/v1/pokemon/1/', data, function(data){
+      //   console.log(data);
+      // }, 'json');
+      //
+      $('form').submit(function(event){
+        event.preventDefault();
+        var p_id = $('input[name="poke_id"]').val();
+        var purl = 'http://pokeapi.co/api/v1/pokemon/' + p_id + '/';
+        $.get(purl, function(data){
+          console.log(data);
+          var html_str = "<h2>Pokemon: " + data.name + '</h2>';
+          var monster = '<img class = "monster" src="http://pokeapi.co/media/img/' + p_id + '.png">';
+          $('body').append(monster);
+          $('body').append(html_str);
+          $('body').append('<p> Attack is: ' + data.attack + '</p>');
+          $('body').append('<p> Happiness is: ' + data.happiness + '</p>');
+        }, 'json');
+
+      });
+
+      // $('.submit').click(function(){
+      //   var p_id = $('input[name="poke_id"]').val();
+      //   var purl = 'http://pokeapi.co/api/v1/pokemon/' + p_id + '/';
+      //   $.get(purl, function(data){
+      //     console.log(data);
+      //     var html_str = "<h2>Pokemon: " + data.name + '</h2>';
+      //     var monster = '<img class = "monster" src="http://pokeapi.co/media/img/' + p_id + '.png">';
+      //     $('body').append(monster);
+      //     $('body').append(html_str);
+      //     $('body').append('<p> Attack is: ' + data.attack + '</p>');
+      //     $('body').append('<p> Happiness is: ' + data.happiness + '</p>');
+      //   }, 'json');
+      //
+      //   return false;
+      // });
+    });
+  </script>
+</head>
+<body>
+  <div id="wrapper">
+   <div class="title_bar">
+     <h1>AJAX Exercise</h1>
+   </div>
+   <form action="" method="post">
+     <input type="text" name="poke_id" id="id" placeholder="pokemon id">
+     <input type="submit" class="submit" value="Submit">
+   </form>
+</body>
+</html>
