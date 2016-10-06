@@ -14,7 +14,12 @@ $(document).ready(function(){
       console.log(data);
       var html_str = "<h2>Pokemon: " + data.name + '</h2>';
       html_str += '<img class = "monster" src="http://pokeapi.co/media/img/' + p_id + '.png">';
+      html_str += '<p>Types:</p><ul>'
+      for (var i=0; i < data.types.length; i++){
+        html_str += '<li>' + data.types[i].name + '</li>'
+      }
       //html_str += '<p> Types: ' + data.height + '</p>';
+      html_str += '</ul>'
       html_str += '<p> Height is: ' + data.height + '</p>';
       html_str += '<p> Weight is: ' + data.weight + '</p>';
       $('.deck').append(html_str);
