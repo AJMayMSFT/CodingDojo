@@ -33,20 +33,20 @@ def shiftValues(arr)
 end
 
 def shiftValues2(arr)
-  puts arr.drop(1).push(0)
+  arr.drop(1).push(0)
 end
 
 def shiftValues3(arr)
   arr.shift(1)
-  puts arr.push(0)
+  arr.push(0)
 end
 
 def numberToString(arr)
-  puts arr.each {|i| arr[arr.index(i)] = "Dojo" if (i < 0)}
+  arr.each {|i| arr[arr.index(i)] = "Dojo" if (i < 0)}
 end
 
 def numberToString2(arr)
-  puts arr.collect! {|e| (e < 0)? "Dojo": e}
+  arr.collect! {|e| (e < 0)? "Dojo": e}
 end
 
 def numberToString3(arr)
@@ -61,4 +61,12 @@ def numberToString3(arr)
   puts arr
 end
 
-squareValues2([1, -5, 20, -2])
+a = {:first_name => "Michael", :last_name => "Choi"}
+b = {:first_name => "John", :last_name => "Supsupin"}
+c = {:first_name => "KB", :last_name => "Tonel"}
+d = {:first_name => "Jessie", :last_name => "De Leon"}
+e = {:first_name => "Jaybee", :last_name => "Balog"}
+names = [a, b, c, d, e]
+
+puts "You got #{names.length} names in the 'names' array."
+puts names.collect {|h| "The name is: #{h[:first_name]} #{h[:last_name]}" }
