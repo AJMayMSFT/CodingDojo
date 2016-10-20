@@ -1,7 +1,5 @@
 module MyEnumerable
   def my_each
-    #your code here!
-    #self.each {|i| puts i}
     self.each {|n| yield n }
   end
 end
