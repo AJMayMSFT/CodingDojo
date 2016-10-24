@@ -11,4 +11,4 @@ class Mammal
   end
 end
 
-Mammal.new.display_health
+# Mammal.new.display_health
