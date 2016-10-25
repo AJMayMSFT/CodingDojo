@@ -8,7 +8,7 @@ class BankAccount
     @interest_rate = 0.015
   end
 
-  def num_of_accounts
+  def self.num_of_accounts
     puts @@num_accounts
   end
 
@@ -51,7 +51,7 @@ class BankAccount
   end
 
   def display_balance
-    puts "Total: $#{@checking_balance + @savings_balance}"
+     "Total: $#{@checking_balance + @savings_balance}"
   end
 
   private
@@ -62,7 +62,7 @@ class BankAccount
   end
 end
 
-ba1 = BankAccount.new
-ba2 = BankAccount.new
-ba1.deposit(50, 'savings').withdraw(100, 'savings').display_balance()
-puts ba1.interest_rate
+# ba1 = BankAccount.new
+# ba2 = BankAccount.new
+# ba1.deposit(50, 'savings').withdraw(100, 'savings').display_balance()
+# puts BankAccount.num_of_accounts
