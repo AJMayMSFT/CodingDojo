@@ -34,7 +34,7 @@ RSpec.describe Solar_System do
       ss.add_planet(earth)
       ss.add_planet(mars)
       ss.add_planet(uranus)
-      expect(ss.display_total).to eq(3)
+      expect(ss.display_total).to(eq(3))
     end
   end
   describe '#add_planet' do
@@ -53,7 +53,7 @@ RSpec.describe Solar_System do
       ss.add_planet(mars)
       ss.add_planet(uranus)
       ss.supernova
-      expect(ss.list_planets).to eq([]) 
+      expect(ss.list_planets).to eq([])
     end
   end
 end
