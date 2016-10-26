@@ -4,12 +4,10 @@ class Solar_System
   def initialize(name="Andromeda")
     @name = name
     @planets = []
-    @planet_total = 0
   end
   def add_planet(planet)
     if (planet.class.ancestors.include? Planet)
       @planets.push(planet)
-      @planet_total += 1
     else
       "Planets only, please. Sorry, Pluto."
     end
@@ -20,12 +18,9 @@ class Solar_System
     list
   end
   def display_total
-    @planet_total
+    @planets.length
   end
   def supernova
-    # @planets.length.times do
-    #   @planets.pop
-    # end
     @planets.length.times {@planets.pop}
   end
 end
