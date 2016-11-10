@@ -1,0 +1,25 @@
+<h1>Submitted information</h1>
+<p id="flash"><%= flash[:submits] %></p>
+<table>
+  <tr>
+      <td>Your Name</td>
+      <td><%= params[:survey][:name] %></td>
+  </tr>
+  <tr>
+      <td>Dojo Location</td>
+      <td>add later</td>
+  </tr>
+  <tr>
+      <td>Favorite Language</td>
+      <td>add later</td>
+  </tr>
+  <tr>
+      <td>Comments</td>
+      <td><%= params[:survey][:comment] %></td>
+  </tr>
+  </tbody>
+
+</table>
+<form action="new">
+  <input type="submit" value="Go Back">
+</form>

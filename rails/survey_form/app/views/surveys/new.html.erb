@@ -1,0 +1,9 @@
+<h1>Please fill out the following survey</h1>
+<p>Several times, if you want.</p>
+
+<form action='/surveys/' method='post'>
+  <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+  <label>Your Name:<input type='text' name='survey[name]' /></label>
+  <label>Comment (optional):<input type='text' name='survey[comment]' /></label>
+  <input type='submit' value='Create' />
+</form>

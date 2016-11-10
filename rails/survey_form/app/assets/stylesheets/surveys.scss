@@ -1,0 +1,16 @@
+// Place all the styles related to the Surveys controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+*{
+    font-family: 'helvetica neue', arial, verdana, sans-serif;
+}
+label{
+  display: block;
+  padding: 10px;
+  background-color: lightgray;
+  width: 300px;
+  margin: 10px;
+}
+#flash{
+  color: green;
+}
