@@ -4,6 +4,13 @@
 <form action='/surveys/' method='post'>
   <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
   <label>Your Name:<input type='text' name='survey[name]' /></label>
+  <label>
+  <select>
+     <option value="volvo">Volvo</option>
+     <option value="saab">Saab</option>
+     <option value="mercedes">Mercedes</option>
+     <option value="audi">Audi</option>
+  </select></label>
   <label>Comment (optional):<input type='text' name='survey[comment]' /></label>
   <input type='submit' value='Create' />
 </form>
