@@ -4,13 +4,20 @@
 <form action='/surveys/' method='post'>
   <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
   <label>Your Name:<input type='text' name='survey[name]' /></label>
-  <label>
-  <select>
-     <option value="volvo">Volvo</option>
-     <option value="saab">Saab</option>
-     <option value="mercedes">Mercedes</option>
-     <option value="audi">Audi</option>
+  <label >Dojo Location:
+  <select name='survey[location]'>
+     <option value="mountain_view">Mountain View</option>
+     <option value="seattle">Seattle</option>
+     <option value="san_fran">San Francisco</option>
+     <option value="chicago">Chicago</option>
   </select></label>
-  <label>Comment (optional):<input type='text' name='survey[comment]' /></label>
+  <label name=>
+  <select name='survey[language]'>
+     <option value="js">JavaScript</option>
+     <option value="ror">Ruby on Rails</option>
+     <option value="csharp">C#</option>
+     <option value="swift">Swift</option>
+  </select></label>
+  <label>Comment (optional):<input type='textarea' name='survey[comment]' /></label>
   <input type='submit' value='Create' />
 </form>
