@@ -12,7 +12,14 @@
     <td><%= user.first_name %></td>
     <td><%= user.last_name %></td>
     <td><%= user.email_address %></td>
-    <td><a href="/users/<%= user.id %>/">Show</a>  |  <a href="">Edit</a>  |  <a href="">Destroy</a></td>
+    <td>
+      <a href="/users/<%= user.id %>/">Show</a>  |
+      <a href="/users/<%= user.id %>/edit">Edit</a>  |
+      <form action="/users/<%= user.id %>" method="post">
+        <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+        <input type="hidden" name="_method" value="delete">
+        <button type="submit">Destroy</button>
+      </form>
   </tr>
   <% end %>
 </table>
