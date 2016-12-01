@@ -1,0 +1,21 @@
+<h1>Submitted Information</h1>
+<p><%= flash[:message] %></p>
+
+<table>
+  <tr>
+    <td>Name: </td>
+    <td><%= params[:survey][:name] %> </td>
+  </tr>
+  <tr>
+    <td>Dojo Location: </td>
+    <td><%= params[:survey][:location] %> </td>
+  </tr>
+  <tr>
+    <td>Favorite Language: </td>
+    <td> <%= params[:survey][:language] %> </td>
+  </tr>
+  <tr>
+    <td>Comment: </td>
+    <td><%= params[:survey][:comment] %> </td>
+  </tr>
+</table>
