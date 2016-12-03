@@ -1,0 +1,30 @@
+<h1>Products List</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Price</th>
+    <th>Category</th>
+    <th>Function</th>
+  </tr>
+    <% @products.each do |product| %>
+  <tr>
+
+    <td><%= product.name %></td>
+    <td><%= product.description %></td>
+    <td><%= product.pricing %></td>
+    <td><%= @categories.find(product.category_id).name %></td>
+    <td>
+      <a href="/products/<%= product.id %>/">Show</a>  |
+      <a href="/products/<%= product.id %>/edit">Edit</a>  |
+      <form action="/products/<%= product.id %>" method="post" class="destroy">
+        <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+        <input type="hidden" name="_method" value="delete">
+        <button type="submit" class="destroy">Destroy</button>
+      </form>
+  </tr>
+  <% end %>
+</table>
+
+<a href="/products/new"><button>New product</button></a>

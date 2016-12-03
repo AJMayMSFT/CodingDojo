@@ -1,0 +1,17 @@
+<h1>Product Details</h1>
+<table>
+  <tr>
+    <td>Name</td><td><%= @product.name %></td>
+  </tr>
+  <tr>
+    <td>Description</td><td><%= @product.description %></td>
+  </tr>
+  <tr>
+    <td>Price</td><td><%= @product.pricing %></td>
+  </tr>
+  <tr>
+    <td>Category</td><td><%= @category_name %></td>
+  </tr>
+
+</table>
+<p><a href="/products/<%= @product.id %>/edit">Edit</a>  |  <a href="/">Back</a></p>
