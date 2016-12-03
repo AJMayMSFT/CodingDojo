@@ -1,0 +1,41 @@
+<div class="top_nav">
+  <h1>Coding Dojo Wall</h1>
+  <h5>Welcome <%= session[:first_name] %> <a href="/logout">Log out</a></h5>
+</div>
+<div >
+  <h3>Post a message</h3>
+  <% if flash[:message_errors]!=nil %>
+    <%  flash[:message_errors].each do |error| %>
+    <p class="error"><%= error %></p>
+    <% end %>
+  <% end %>
+  <form action='/message/create' method='post'>
+    <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+    <textarea name="message" ></textarea>
+    <input type='submit' value='Post a message' />
+  </form>
+</div>
+<% if flash[:comment_errors]!=nil %>
+  <%  flash[:comment_errors].each do |error| %>
+  <p class="error"><%= error %></p>
+  <% end %>
+<% end %>
+<div>
+  <% @messages.each do |m| %>
+    <h4><%= m.user.full_name %> - <%= m.created_at %></h4>
+    <p ><%= m.message %></p>
+    <div class="comment">
+      <% m.comments.reverse.each do |c| %>
+        <h5><%= c.user.full_name %> - <%= c.created_at %></h5>
+        <p ><%= c.comment %></p>
+      <% end %>
+    </div>
+    <form action='/comments/create' method='post'>
+      <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+      <input name="message_id" type="hidden" value="<%= m.id %>">
+      <textarea name="comment" ></textarea>
+      <input type='submit' value='Post a comment' />
+    </form>
+  <% end %>
+
+</div>
