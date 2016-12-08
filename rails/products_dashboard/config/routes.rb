@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'comments/create'
+
+  get 'comments/index'
+
   root :to=> 'products#index'
   get 'products/new' => 'products#new'
   get 'products/:id/edit' => 'products#edit'
@@ -8,6 +12,8 @@ Rails.application.routes.draw do
   get 'products' => 'products#index'
   post 'products' => 'products#create'
   delete 'products/:id' => 'products#destroy'
+  post 'products/:id/comment' => 'comments#create'
+  get 'comments' => 'comments#index'
 
 
   get 'products/index'
