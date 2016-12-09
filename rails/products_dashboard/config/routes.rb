@@ -1,9 +1,5 @@
 Rails.application.routes.draw do
 
-  get 'comments/create'
-
-  get 'comments/index'
-
   root :to=> 'products#index'
   get 'products/new' => 'products#new'
   get 'products/:id/edit' => 'products#edit'
